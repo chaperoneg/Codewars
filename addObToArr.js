@@ -10,8 +10,16 @@
 // player_manager("") returns []
 // playerManager("John Doe, 8167238327, Jane Doe, 8163723827") retur
 
+function playerManager(players) {
+    if(players === '' || players === null) return [];
+    players = players.split`, `;
+    let result = [];
+    for(let i = 0; i < players.length; i+=2) {
+      result.push( {player: players[i], contact: +players[i+1]} );
+    }
+    return result;
+  }
 
 
-
-const playerManager = players =>
-  players ? players.split(`, `).reduce((pre, val, idx, arr) => idx % 2 ? pre : [...pre, {player: val, contact: +arr[idx + 1]}], []) : [];
+// const playerManager = players =>
+//   players ? players.split(`, `).reduce((pre, val, idx, arr) => idx % 2 ? pre : [...pre, {player: val, contact: +arr[idx + 1]}], []) : [];
