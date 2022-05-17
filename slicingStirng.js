@@ -4,7 +4,7 @@
 
 function removeChar(str){
   
-    return str.slice(1,str.length - 1)
+    return str.slice(1,str.length - 1) //str.slice(1, -1);
    //You got this!
   
   };
