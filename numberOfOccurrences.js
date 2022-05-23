@@ -17,4 +17,4 @@ Array.prototype.numberOfOccurrences = function(a) {
     return count
   }
 
-  //https://www.codewars.com/kata/52829c5fe08baf7edc00122b/train/javascript
+  //https://www.codewars.com/kata/52829c5fe08baf7edc00122b/train/javascriptc
