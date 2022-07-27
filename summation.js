@@ -16,4 +16,4 @@ var summation = function (num) {
     return sum
   }
 
-//   const summation = n => n * (n + 1) / 2
+//   
