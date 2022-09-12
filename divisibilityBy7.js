@@ -27,8 +27,8 @@
 function seven(m) {
     // your code
   let steps = 0
-  while(m >= 100){
-    m = Math.floor(m/10) - (2 * m%10)
+  while(m > 99){
+    m = parseInt(m/10) - (2 * m%10)
     steps ++
   }
   return [m,steps]
